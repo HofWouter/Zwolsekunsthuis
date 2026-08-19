@@ -443,7 +443,6 @@ footer .nav-menu-container{
 .header{
 
     width: auto;
-    height: calc(90vh - 48px - 16px);
 
     display: flex;
     flex-direction: column;
@@ -479,7 +478,7 @@ footer .nav-menu-container{
 
 .header-image-wrapper{
 
-    height: 100%;
+    height: auto;
     width: auto;
     border: 4px solid black;
     padding: 16px;
@@ -678,6 +677,10 @@ input:focus{
     gap: 8px;
 }
 
+.button-secondary-content span{
+    color: black;
+}
+
 .card-item{
     display: flex;
     flex-direction: column;
@@ -732,7 +735,7 @@ input:focus{
 
 .card-carousel{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 16px;
 
     width: 100%;
@@ -763,6 +766,7 @@ input:focus{
 
 .header{
     flex-direction: row;
+    min-height: calc(90vh - 48px - 16px);
 }
 
 .header-expo{
