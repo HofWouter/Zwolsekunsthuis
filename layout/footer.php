@@ -45,7 +45,7 @@
                         </p>
                     </div>
                     <a href="#" class="nav-link-secondary">Routebeschrijving</a>
-                </div>
+                    </div>
                 <a>We zijn nu geopend!</a>
                 </div>
                 <div class="volg-ons-container">

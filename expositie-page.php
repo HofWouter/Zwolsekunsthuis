@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php include __DIR__ . '/UI-elements/nav-bar.php'; ?>
-<div class="first header header-expo header-spacing">
+<div class="first header header-expo header-spacing header-product">
         <div class="header-text header-text-expo">
             <div class=header-text-wrapper>
                 <h1>Een feest waarbij velen sterven</h1>

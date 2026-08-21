@@ -20,7 +20,7 @@
                                 <a href="#" class="nav-menu-link">Voorgaand</a>
                         </div>
                         <div class="nav-menu-link">
-                                <a href="#" class="nav-menu-link">Elyne Dunning</a>
+                                <a href="./product-page.php" class="nav-menu-link">Elyne Dunning</a>
                                 <a href="#" class="nav-menu-link">Jonatan Ivgi</a>
                                 <a href="#" class="nav-menu-link">Ielyj Ivgi</a>
                         </div>
