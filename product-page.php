@@ -25,10 +25,13 @@
         </div> 
         <button class="button-primary product-request-button">Vraag aan</button>
         </div>
-        <div class="product-carousel-position">
-            <div class="product-image-padding" data-carousel-images="./assets/placeholder_image.jpg,./assets/placeholder_image.jpg,./assets/placeholder_image.jpg" tabindex="0" aria-label="Productfoto's">
-                <img src="./assets/placeholder_image.jpg" alt="Header Image" class="header-image product-image">
-                <p class="overlay-text">Lorem ipsum dolor sit amet</p>  
+        <div class="product-carousel">
+            <div class="product-carousel-padding">
+                <div class="carousel--items">
+                    <img class="carousel--item header-image product-image" src="./assets/placeholder_image.jpg" alt="">
+                    <img class="carousel--item header-image product-image" src="./assets/placeholder_image.jpg" alt="">
+                    <img class="carousel--item header-image product-image" src="./assets/placeholder_image.jpg" alt="">
+                </div>
             </div>
             <div class="product-image-controls">
                 <button class="product-image-control" type="button" aria-label="Vorige foto">

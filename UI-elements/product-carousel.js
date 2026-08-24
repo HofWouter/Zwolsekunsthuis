@@ -1,37 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.product-carousel-position').forEach((carousel) => {
-        const imageWrapper = carousel.querySelector('.product-image-padding');
-        const image = imageWrapper?.querySelector('.product-image');
-        const previousButton = carousel.querySelector('.product-image-control:not(.product-image-control-next)');
-        const nextButton = carousel.querySelector('.product-image-control-next');
+document.querySelectorAll('.product-carousel').forEach((carousel) => {
+    const track = carousel.querySelector('.carousel--items');
+    const items = carousel.querySelectorAll('.carousel--item');
+    const previousButton = carousel.querySelector('.product-image-control:not(.product-image-control-next)');
+    const nextButton = carousel.querySelector('.product-image-control-next');
+    let activeIndex = 0;
 
-        if (!imageWrapper || !image || !previousButton || !nextButton) return;
+    if (!track || items.length === 0 || !previousButton || !nextButton) {
+        return;
+    }
 
-        const images = imageWrapper.dataset.carouselImages
-            .split(',')
-            .map((source) => source.trim())
-            .filter(Boolean);
+    const updateCarousel = () => {
+        const offsetPercentage = activeIndex * 100;
+        const offsetPixels = activeIndex * 20;
+        track.style.transform = `translateX(calc(-${offsetPercentage}% - ${offsetPixels}px))`;
+        previousButton.disabled = activeIndex === 0;
+        nextButton.disabled = activeIndex === items.length - 1;
+    };
 
-        if (images.length < 2) {
-            previousButton.disabled = true;
-            nextButton.disabled = true;
-            return;
+    previousButton.addEventListener('click', () => {
+        if (activeIndex > 0) {
+            activeIndex -= 1;
+            updateCarousel();
         }
-
-        let currentIndex = images.indexOf(image.getAttribute('src'));
-        if (currentIndex < 0) currentIndex = 0;
-
-        const showImage = (index) => {
-            currentIndex = (index + images.length) % images.length;
-            image.src = images[currentIndex];
-        };
-
-        previousButton.addEventListener('click', () => showImage(currentIndex - 1));
-        nextButton.addEventListener('click', () => showImage(currentIndex + 1));
-
-        imageWrapper.addEventListener('keydown', (event) => {
-            if (event.key === 'ArrowLeft') showImage(currentIndex - 1);
-            if (event.key === 'ArrowRight') showImage(currentIndex + 1);
-        });
     });
+
+    nextButton.addEventListener('click', () => {
+        if (activeIndex < items.length - 1) {
+            activeIndex += 1;
+            updateCarousel();
+        }
+    });
+
+    updateCarousel();
 });

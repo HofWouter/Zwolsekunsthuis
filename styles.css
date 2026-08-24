@@ -16,7 +16,7 @@ h1{
     font-family: 'Raleway', sans-serif;
     font-size: 53px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     text-transform: uppercase;
 }
 
@@ -334,6 +334,10 @@ footer .nav-menu-container{
     object-fit: contain;
 }
 
+.product-image--selected{
+    display: block;
+}
+
 @media (max-width: 768px) {
 
 
@@ -485,7 +489,7 @@ footer .nav-menu-container{
 }
 
 .header-image-wrapper,
-.product-image-padding{
+.product-carousel-padding{
 
     height: auto;
     width: auto;
@@ -495,7 +499,20 @@ footer .nav-menu-container{
     overflow: hidden;
     cursor: pointer;
 
+    display: flex;
+    justify-content: center;
+
     aspect-ratio: 1/1;
+
+}
+
+.carousel--items{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 100%;
+    gap: 20px;
+
+    transition: transform 0.3s ease;
 
 }
 
@@ -688,6 +705,11 @@ input:focus{
     border-left: none;
 }
 
+.product-image-control:disabled{
+    cursor: not-allowed;
+    opacity: 0.35;
+}
+
 .button-secondary{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
@@ -805,6 +827,7 @@ input:focus{
 }
 
 
+
 @media (min-width: 768px){
 
 .header{
@@ -817,15 +840,16 @@ input:focus{
 }
 
 .header-image-wrapper,
-.product-image-padding{
+.product-carousel-padding{
     height: auto;
     align-self: stretch;
     aspect-ratio: auto;
     box-sizing: border-box;
+
 }
 
 
-.product-image-padding{
+.product-carousel-padding{
     padding-left: calc(64px + 16px);
     padding-right: calc(64px + 16px);
     height: 100%;
@@ -923,8 +947,9 @@ input:focus{
     box-sizing: border-box;
 }
 
-.product-carousel-position{
+.product-carousel{
     position: relative;
+    width: 100%;
 }
 
 .product-image-control{
@@ -998,10 +1023,6 @@ footer{
 .header-text-product{
     box-sizing: border-box;
     width: 30vw;
-}
-
-.product-carousel-position{
-    width: auto;
 }
 
 }
