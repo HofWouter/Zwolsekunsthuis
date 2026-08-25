@@ -38,7 +38,7 @@
                         </div>
                 </div>
             </div>
-            <div class="text-blok-expo about-text-blok">
+            <div class="text-blok-expo about-text-blok" id="openingstijden">
                 <div class="about-text-blok-info">
                         <div>
                             <h2>Adres</h2>
@@ -50,7 +50,7 @@
                                     <br>
                                     Nederland
                                     </p>
-                                <a href="#" class="nav-link-secondary">Routebeschrijving</a>
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Praubstraat+4%2C+8011+PN+Zwolle" class="nav-link-secondary" target="_blank" rel="noopener noreferrer">Routebeschrijving</a>
                         </div>
                         <div>
                             <h2>Openingstijden</h2>
