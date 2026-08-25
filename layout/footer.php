@@ -1,4 +1,4 @@
-    <footer>
+    <footer id="footer">
         <div class="footer-wrapper">
         <div class="nieuwsbrief-wrapper">
             <div>
@@ -10,7 +10,6 @@
             <input type="email" placeholder="e-mailadres">
             <hr style="height: 4px; background-color: white; border: none; margin: 0;">
             </div>
-
             <button class="button-primary">Inschrijven</button>
             </div>
         </div>
@@ -30,32 +29,7 @@
                     <a href="#" class="nav-link" style="color: inherit;">Shop</a>
                 </div>
             </div>
-            <div class="nav-menu-container">
-                <div class="nav-menu-informatie-wrapper">
-                <div>
-                    <h6>Bezoekersinformatie</h6>
-                    <div>
-                        <p>'t Zwolse kunsthuis
-                        <br>
-                        Praubstraat 4
-                        <br>
-                        8011 PN Zwolle
-                        <br>
-                        Nederland
-                        </p>
-                    </div>
-                    <a href="#" class="nav-link-secondary">Routebeschrijving</a>
-                    </div>
-                <a>We zijn nu geopend!</a>
-                </div>
-                <div class="volg-ons-container">
-                    <h6>Volg ons</h6>
-                    <div class="icon-social-container">
-                        <a href="#"><img src="./assets/facebook.svg" class="icon-social"></a>
-                        <a href="#"><img src="./assets/instagram.svg" class="icon-social"></a>
-                    </div>
-                </div>
-            </div>
+            <?php include __DIR__ . '/../layout/contact-details.php'; ?>
         </div>
         <img src="./assets/logo_wit.svg" alt="Logo" class="logo-groot">
     </footer>

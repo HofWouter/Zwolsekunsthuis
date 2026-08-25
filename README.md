@@ -2,18 +2,22 @@
 
 Dit is de respository voor de website van een galerie in Zwolle. Deze website presenteert de huidige, voorgaande en komende exposities. Daarnaast zijn er de openingstijden en contactinformatie te vinden voor bezoekers en kunstverzamelaars. De website werkt ook als een webshop. 
 
-Reden van dit project is dat ik beter wil worden in het maken van een webshop. In een eerder project ben ik hiermee begonnen, maar ik wil deze vaardigheden nog verbeteren. De eerste stap is het maken van het ontwerp, en deze uitwerken in statische code.
+---
 
-Voor het inventariseren van de technische mogelijkheden van WordPress/WooCommerce, en het maken van de benodigde draadmodellen heb ik mijzelf een einddatum gegeven. 
-
-Startdatum: 24 aug 2026
-Einddatum: 4 september 2026
+Reden van dit project is dat ik beter wil worden in het maken van een webshop. In een eerder project ben ik hiermee begonnen, maar ik wil deze vaardigheden nog verbeteren. 
 
 ---
 
 ## Leerdoelen
 
 * Binnen het gehele project zou ik een beter begrip willen hebben van de mogelijkheden binnen WordPress/WooCommerce. Daarnaast wil ik de basis die ik in een voorgaand project heb gelegd (code schrijven in PHP/ACF), willen herhalen en verder willen uitdiepen.
+
+25 augustus 2026
+
+Als eerste stap in dit project verbeter ik eerder gemaakte fouten in het CSS. Daarnaast wil ik nog een carousel maken voor een productpagina.
+
+Startdatum: 25 aug 2026
+Einddatum: 31 aug 2026
 
 ---
 

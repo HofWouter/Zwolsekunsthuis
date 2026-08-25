@@ -10,4 +10,5 @@
 <?php include __DIR__ . '/UI-elements/header.php'; ?>
 <?php include __DIR__ . '/UI-elements/nieuws-block.php'; ?>
 <?php include __DIR__ . '/layout/footer.php'; ?>
+<script src="./UI-elements/nav-bar.js"></script>
 </body>

@@ -70,6 +70,7 @@ button{
     cursor: pointer;
     background: none;
     border: none;
+    color: black;
 }
 
 .logo{
@@ -96,6 +97,16 @@ nav{
     right: 0;
 
     z-index: 1000;
+}
+
+#nav{
+    transition: transform 0.3s ease;
+    opacity: 1;
+}
+
+#nav.hide{
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
 .nav-bar{
@@ -253,7 +264,7 @@ footer .nav-menu-container{
     color: inherit;
 }
 
-.visitorinfo{
+nav .visitorinfo{
     display: none;
 }
 
@@ -912,7 +923,7 @@ input:focus{
     color: #ffffff;
 }
 
-.visitorinfo{
+nav .visitorinfo{
     display: block;
 }
 

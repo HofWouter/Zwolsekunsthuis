@@ -101,6 +101,6 @@
         </div>
     </div>
 </div>
-
 <?php include __DIR__ . '/layout/footer.php'; ?>
+<script src="./UI-elements/nav-bar.js"></script>
 </body>
