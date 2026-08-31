@@ -14,14 +14,19 @@
                 <h1>Een feest waarbij velen sterven</h1>
                 <h4>Gideon Eilert</h4>
             </div>
+            <p>€200,-</p>
             <div class="header-info">
-                <div class=header-text-wrapper>
-                    <h6>FOTO</h6>
-                    <h6>ABSTRACT</h6>
+                <div class="header-text-wrapper header-text-product-detail">
+                    <div class= "label">
+                        <p style="margin:0px;">FOTO</p>
+                    </div>
+                    <div class= "label">
+                        <p style="margin:0px;">ABSTRACT</p>
+                    </div>
                 </div>
+                <p>20x30cm</p>
             </div>
             <p>De installatie Circuits van de Amsterdamse ontwerp-collectief Experimental Jetset is speciaal ontworpen voor de omloop bovenaan de historische trap van het museum. Circuits laat zien hoe informatie ooit letterlijk een fysieke vorm had: geluid, beeld en andere data werden opgeslagen op tastbare dragers.</p>
-            
         </div> 
         <button class="button-primary product-request-button">Vraag aan</button>
         </div>

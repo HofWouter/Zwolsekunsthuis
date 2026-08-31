@@ -600,7 +600,11 @@ nav .visitorinfo{
 .header-text-product{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 0px;
+}
+
+.header-text-product-detail{
+    flex-direction: row;
 }
 
 .header-product{
@@ -611,7 +615,7 @@ nav .visitorinfo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     
 }
 
@@ -851,7 +855,7 @@ input:focus{
 }
 
 .header-height{
-    min-height: calc(90vh - 48px - 16px - 78px);
+    min-height: calc(90vh - 48px - 16px -);
 }
 
 .header-image-wrapper,
