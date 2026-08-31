@@ -7,19 +7,20 @@
 </head>
 <body>
 <?php include __DIR__ . '/UI-elements/nav-bar.php'; ?>
-<div class="first header-expo">
-    <h1>Over</h1>
-    <div class="over-wrapper">
-        <div class="header header-spacing">
-            <div class="header-text header-text-expo" style="gap:0px;">
+    <div class="first">
+        <h1>Over</h1>
+        <div class="header header-spacing header-height">
+            <div class="header-text header-text-expo">
                 <h6>Lorem ipsum dolor sit amet</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
             </div>
             <div class="header-image-wrapper">
-                    <img src="./assets/placeholder_image.jpg" alt="Header Image" class="header-image">
-                    <p class="overlay-text">Lorem ipsum dolor sit amet</p>  
+                <img src="./assets/placeholder_image.jpg" alt="Header Image" class="header-image">
+                <p class="overlay-text">Lorem ipsum dolor sit amet</p>  
             </div>
         </div>
+    </div>
+    <div class="over-wrapper content">
         <div class="about-details">
             <div class="text-blok-expo about-text-blok">
                 <div>
@@ -100,7 +101,6 @@
             </div>
         </div>
     </div>
-</div>
 <?php include __DIR__ . '/layout/footer.php'; ?>
 <script src="./UI-elements/nav-bar.js"></script>
 </body>
