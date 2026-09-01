@@ -36,6 +36,7 @@
                     <img class="carousel--item header-image product-image" src="./assets/placeholder_image.jpg" alt="">
                     <img class="carousel--item header-image product-image" src="./assets/placeholder_image.jpg" alt="">
                     <img class="carousel--item header-image product-image" src="./assets/placeholder_image.jpg" alt="">
+                    <img class="carousel--item header-image product-image" src="./assets/placeholder_image.jpg" alt="">
                 </div>
             </div>
             <div class="product-image-controls">

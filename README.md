@@ -12,12 +12,19 @@ Reden van dit project is dat ik beter wil worden in het maken van een webshop. I
 
 * Binnen het gehele project zou ik een beter begrip willen hebben van de mogelijkheden binnen WordPress/WooCommerce. Daarnaast wil ik de basis die ik in een voorgaand project heb gelegd (code schrijven in PHP/ACF), willen herhalen en verder willen uitdiepen.
 
-25 augustus 2026
+### 5 augustus 2026 - Sprint 1
 
 Als eerste stap in dit project verbeter ik eerder gemaakte fouten in het CSS. Daarnaast wil ik nog een carousel maken voor een productpagina.
 
 Startdatum: 25 aug 2026
 Einddatum: 31 aug 2026
+
+### 31 augustus 2026 - Sprint 2
+
+Nu in de tweede sprint zal ik schaalbare wireframes maken voor de Agenda, en de huidige expositites en komende exposities. Ik maak de nodige breakpoints tussen 360px en 1200px.
+
+Startdatum: 31 aug 2026
+Einddatum: 7 sept 2026
 
 ---
 
@@ -27,7 +34,6 @@ Einddatum: 31 aug 2026
 
     * Nu te zien
     * Coming up
-    * Voorgaand
 
 * Atelierhouders
     * Elyne Dunning

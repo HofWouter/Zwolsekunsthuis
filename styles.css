@@ -855,7 +855,7 @@ input:focus{
 }
 
 .header-height{
-    min-height: calc(90vh - 48px - 16px -);
+    min-height: calc(90vh - 48px - 16px - 48px);
 }
 
 .header-image-wrapper,
