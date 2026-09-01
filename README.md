@@ -26,6 +26,13 @@ Nu in de tweede sprint zal ik schaalbare wireframes maken voor de Agenda, en de 
 Startdatum: 31 aug 2026
 Einddatum: 7 sept 2026
 
+### 1 september 2026 - Sprint 3
+
+In deze sprint ga ik de wireframes die ik in de vorige sprint heb ontworpen, schrijven in code. Het worden statische pagina's, waarbij ik de verschillende blokken opdeel in componenten. Voor de volgende sprint wil ik kijken wat de voordelen/nadelen zijn van tailwind in het schrijven van mijn CSS.
+
+Startdatum: 1 sept 2026
+Einddatum: 11 sept 2026
+
 ---
 
 ## Pagina's

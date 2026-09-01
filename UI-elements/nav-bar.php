@@ -5,7 +5,7 @@
                 </a>
                 <div class="nav-links-container" id="mobile-nav-panel">
                     <div class="nav-links">
-                        <a href="./expositie-page.php" class="nav-link">Agenda</a>
+                        <a href="./agenda-page.php" class="nav-link">Agenda</a>
                         <a href="./over-page.php" class="nav-link">Atelierhouders</a>
                         <a href="./over-page.php" class="nav-link">Over</a>
                         <a href="./over-page.php" class="nav-link">Vrijwilligers</a>

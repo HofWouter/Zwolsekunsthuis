@@ -14,7 +14,7 @@
 
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 53px;
+    font-size: clamp(40px, 1.646rem + 2.689vw, 53px);
     font-weight: 600;
     margin-bottom: 16px;
     text-transform: uppercase;
@@ -22,7 +22,7 @@ h1{
 
 h2{
     font-family: 'Raleway', sans-serif;
-    font-size: 32px;
+    font-size: clamp(36px, 1.646rem + 2.689vw, 42px);
     font-weight: 600;
 
     text-transform: uppercase;
@@ -30,7 +30,7 @@ h2{
 
 h4{
     font-family: 'Raleway', sans-serif;
-    font-size: 31px;
+    font-size: clamp(27px, 1.646rem + 2.689vw, 31px);
     font-weight: 600;
 
     text-transform: uppercase;
@@ -38,14 +38,14 @@ h4{
 
 p{
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.646rem + 2.689vw, 16px);
     line-height: 1.4;
     font-weight: 400;
 }
 
 a{
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.646rem + 2.689vw, 16px);
     font-weight: 400;
 
     cursor: pointer;
@@ -56,7 +56,7 @@ a{
 
 h6{
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.646rem + 2.689vw, 16px);
     font-weight: 600;
     margin: 0px;
 }
@@ -842,6 +842,18 @@ input:focus{
     width: auto;
 }
 
+.header-agenda-buttons{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-agenda-button {
+    font-size: clamp(36px, 1.646rem + 2.689vw, 53px);
+}
+
 
 
 @media (min-width: 768px){
@@ -1026,9 +1038,17 @@ footer{
     flex-direction: row;
 }
 
+.card-carousel-wrapper-agenda{
+    flex-direction: column;
+}
+
 .card-bekijk-alles{
     width: 10%;
     justify-content: flex-end;
+}
+
+.card-bekijk-alles-agenda{
+    width: 100%;
 }
 
 .about-text-blok-info{

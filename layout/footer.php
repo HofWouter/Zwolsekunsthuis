@@ -20,7 +20,7 @@
         <div class="footer-wrapper">
             <div class="footer-links-wrapper">
                 <div class="footer-links">
-                    <a href="#" class="nav-link" style="color: inherit;">Agenda</a>
+                    <a href="./agenda-page.php" class="nav-link" style="color: inherit;">Agenda</a>
                     <a href="#" class="nav-link" style="color: inherit;">Atelierhouders</a>
                     <a href="./over-page.php" class="nav-link" style="color: inherit;">Over</a>
                 </div>

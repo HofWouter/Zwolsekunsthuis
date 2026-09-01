@@ -1,4 +1,4 @@
-    <div class="first header">
+
         <div class="header-image-wrapper">
             <p class="overlay-text">Lorem ipsum dolor sit amet</p> 
             <img src="./assets/placeholder_image.jpg" alt="Header Image" class="header-image">  
@@ -22,4 +22,3 @@
                     </a>
             </div>
         </div> 
-    </div>
