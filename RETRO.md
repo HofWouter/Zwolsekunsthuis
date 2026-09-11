@@ -28,4 +28,20 @@
 - Terugblik
     Ik weet dat het nu steeds minder tijd kost om de draadmodellen te maken. De wireframes voor de agenda heb ik binnen een dag gemaakt. Ik hoop voor de volgende sprint de tijd beter in te kunnen schatten.
 
+## Sprint 3: 11/09/26
+
+- Opgeleverd:
+    Deze sprint heb ik de wireframes geschreven in code. Dit was niet heel ingewikkeld, omdat ik componenten kon hergebruiken die ik eerder heb gemaakt. Daarnaast heb ik een knop gemaakt die meer artikelen in de agenda kan laten zien.
+
+- Wat ging er goed?
+    Het inschatten van tijd voor deze sprint. Na het bouwen van de opzet, heb ik de rest van de tijd besteed aan het maken van een menu dat uit kan klappen.
+
+- Wat ging er minder goed?
+
+    Ik had nog meer tijd willen besteden aan het leren van tailwind, maar dat lijkt me een goed idee voor de volgende sprint.
+
+- Terugblik
+    Ik ben tevreden over deze sprint. Geen verdere opmerkingen.
+
+
 

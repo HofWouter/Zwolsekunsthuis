@@ -15,7 +15,7 @@
                         <div class="nav-menu-sub">
                             <div class="nav-menu-link">
                                     <a href="./expositie-page.php" class="nav-menu-link">Nu te zien</a>
-                                    <a href="./expositie-page.php" class="nav-menu-link">Coming up</a>
+                                    <a href="./agenda-page.php#coming-up" class="nav-menu-link">Coming up</a>
                             </div>
                             <div class="nav-menu-link">
                                     <a href="./product-page.php" class="nav-menu-link">Elyne Dunning</a>

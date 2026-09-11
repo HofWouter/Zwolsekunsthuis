@@ -19,4 +19,5 @@
 <?php include __DIR__ . '/UI-elements/agenda-block.php'; ?>
 <?php include __DIR__ . '/layout/footer.php'; ?>
 <script src="./UI-elements/nav-bar.js"></script>
+<script src="./UI-elements/berichten-toggle.js"></script>
 </body>
