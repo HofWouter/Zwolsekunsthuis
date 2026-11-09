@@ -1,56 +1,59 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ siteUrl('assets/app.css') }}">
+        <title>'t Zwolse kunsthuis</title>
+    </head>
+    <body>
+        {% include 'UI-elements/nav-bar.twig' %}
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ siteUrl('assets/app.css') }}">
-    <title>'t Zwolse kunsthuis</title>
-</head>
-<body>
-{% include 'UI-elements/nav-bar.twig' %}
-<div class="m-4 mt-24 box-border flex w-auto flex-col-reverse gap-4 md:min-h-[calc(90vh-64px)] md:flex-row">
-    <div class="flex flex-col gap-0 xl:w-[30vw]">
-        <div class="flex flex-col justify-start gap-0 border-4 border-t-4 border-black p-4 md:h-full md:w-[calc(50vw-32px)] md:border-l-4">
-            <div class="flex flex-col gap-2 [&>*]:m-0">
-                <h1>Een feest waarbij velen sterven</h1>
-                <h4>Gideon Eilert</h4>
-            </div>
-            <p>€200,-</p>
-            <div class="flex items-center justify-between">
-                <div class="flex flex-col gap-2 [&>*]:m-0 flex-row">
-                    <div class="flex h-[46px] cursor-pointer flex-col items-center overflow-hidden border-4 border-black px-4 py-2">
-                        <p class="m-0">FOTO</p>
+        <div class="m-4 mt-24 box-border grid w-auto grid-cols-1 gap-4 md:min-h-[calc(90vh-64px)] md:grid-cols-8">
+            <div class="order-2 flex flex-col md:order-1 md:col-span-4 xl:col-span-3">
+                <div class="flex flex-1 flex-col justify-start gap-6 border-4 border-black p-4">
+                    <div class="flex flex-col gap-2">
+                        <h1 class="font-raleway text-5xl font-semibold uppercase">Een feest waarbij velen sterven</h1>
+                        <h4 class="font-raleway text-base font-normal uppercase">Gideon Eilert</h4>
                     </div>
-                    <div class="flex h-[46px] cursor-pointer flex-col items-center overflow-hidden border-4 border-black px-4 py-2">
-                        <p class="m-0">ABSTRACT</p>
+                    <p class="font-raleway text-base font-normal">€200,-</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-row gap-2">
+                            <div class="flex cursor-pointer flex-col items-center overflow-hidden border-4 border-black px-4 py-2">
+                                <p class="font-raleway text-sm font-normal">FOTO</p>
+                            </div>
+                            <div class="flex cursor-pointer flex-col items-center overflow-hidden border-4 border-black px-4 py-2">
+                                <p class="font-raleway text-sm font-normal">ABSTRACT</p>
+                            </div>
+                        </div>
+                        <p class="font-raleway text-base font-normal">20x30cm</p>
+                    </div>
+                    <p class="font-raleway text-base font-normal">De installatie Circuits van de Amsterdamse ontwerp-collectief Experimental Jetset is speciaal ontworpen voor de omloop bovenaan de historische trap van het museum. Circuits laat zien hoe informatie ooit letterlijk een fysieke vorm had: geluid, beeld en andere data werden opgeslagen op tastbare dragers.</p>
+                </div>
+                <button class="cursor-pointer border-0 bg-black p-4 font-raleway text-sm font-semibold uppercase text-white">Vraag aan</button>
+            </div>
+            <div class="order-1 relative w-full md:order-2 md:col-span-4 xl:col-span-5" data-product-carousel>
+                <div class="relative flex aspect-square cursor-pointer justify-center overflow-hidden border-4 border-black p-4 md:aspect-auto md:self-stretch md:h-full md:px-20">
+                    <div class="flex basis-full gap-5 transition-transform duration-300" data-carousel-items>
+                        <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
+                        <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
+                        <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
+                        <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
                     </div>
                 </div>
-                <p>20x30cm</p>
-            </div>
-            <p>De installatie Circuits van de Amsterdamse ontwerp-collectief Experimental Jetset is speciaal ontworpen voor de omloop bovenaan de historische trap van het museum. Circuits laat zien hoe informatie ooit letterlijk een fysieke vorm had: geluid, beeld en andere data werden opgeslagen op tastbare dragers.</p>
-        </div>
-        <button class="cursor-pointer border-0 bg-black p-4 text-sm font-semibold uppercase text-white">Vraag aan</button>
-        </div>
-        <div class="relative w-full" data-product-carousel>
-            <div class="relative flex aspect-square cursor-pointer justify-center overflow-hidden border-4 border-black p-4 md:aspect-auto md:self-stretch md:h-full md:px-20">
-                <div class="flex basis-full gap-5 transition-transform duration-300" data-carousel-items>
-                    <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
-                    <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
-                    <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
-                    <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
+                <div class="flex justify-between md:absolute md:inset-0 md:z-[500]">
+                    <button class="cursor-pointer w-full border-4 border-black border-t-0 bg-white md:h-full md:w-16 md:border-t-4" data-carousel-prev type="button" aria-label="Vorige foto">
+                        <img src="{{ siteUrl('assets/chevron-left.svg') }}" alt="">
+                    </button>
+                    <button class="cursor-pointer flex w-full justify-end border-4 border-l-0 border-black border-t-0 bg-white md:h-full md:w-16 md:border-l-4 md:border-t-4" data-carousel-next type="button" aria-label="Volgende foto">
+                        <img src="{{ siteUrl('assets/chevron-right.svg') }}" alt="">
+                    </button>
                 </div>
             </div>
-            <div class="flex justify-between md:absolute md:inset-0 md:z-[500]">
-                <button class="w-full border-4 border-black border-t-0 bg-white py-0 disabled:cursor-not-allowed disabled:opacity-35 md:h-full md:w-16" data-carousel-prev type="button" aria-label="Vorige foto">
-                    <img src="{{ siteUrl('assets/chevron-left.svg') }}" alt="">
-                </button>
-                <button class="w-full border-4 border-black border-t-0 bg-white py-0 disabled:cursor-not-allowed disabled:opacity-35 md:h-full md:w-16 border-l-0" data-carousel-next type="button" aria-label="Volgende foto">
-                    <img src="{{ siteUrl('assets/chevron-right.svg') }}" alt="">
-                </button>
-            </div>
         </div>
-</div>
-<script src="{{ siteUrl('assets/product-carousel.js') }}"></script>
-{% include 'UI-elements/nieuws-block.twig' %}
-{% include 'UI-elements/footer.twig' %}
-<script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
-</body>
+
+        {% include 'UI-elements/nieuws-block.twig' %}
+        {% include 'UI-elements/footer.twig' %}
+        <script src="{{ siteUrl('assets/product-carousel.js') }}"></script>
+        <script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
+    </body>
+</html>

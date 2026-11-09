@@ -1,35 +1,31 @@
-    <footer id="footer" class="flex flex-col justify-between bg-black px-4 py-[72px] text-white md:flex-row">
-        <div class="flex flex-col justify-between gap-32">
-        <div class="flex w-auto flex-col gap-6 md:w-[400px]">
-            <div>
-            <h2 class="mt-0">Blijf op de hoogte!</h2>
-            <p>Met onze nieuwsbrief blijf je op de hoogte van nieuwe tentoonstellingen, activiteiten en andere projecten van het museum.</p>
+<footer id="footer" class="grid grid-cols-1 justify-between gap-y-12 bg-black px-4 py-18 font-raleway text-white md:grid-cols-8 md:gap-4">
+    <div class="flex flex-col justify-between md:col-span-3 lg:col-span-2">
+        <div class="flex w-auto flex-col gap-6">
+            <div class="flex flex-col gap-4">
+                <h2 class="mt-0 text-3xl font-semibold">Blijf op de hoogte!</h2>
+                <p class="text-base leading-relaxed">Met onze nieuwsbrief blijf je op de hoogte van nieuwe tentoonstellingen, activiteiten en andere projecten van het museum.</p>
             </div>
             <div class="flex flex-col gap-6">
-            <div class="flex flex-col gap-4">
-            <input class="border-0 bg-transparent text-sm uppercase text-white focus:outline-none" type="email" placeholder="e-mailadres">
-            <hr class="m-0 h-1 border-0 bg-white">
-            </div>
-            <button class="cursor-pointer border-0 bg-white p-4 text-sm font-semibold uppercase text-black">Inschrijven</button>
+                <div class="flex flex-col gap-4">
+                    <input class="border-0 bg-transparent text-sm uppercase text-white focus:outline-none" type="email" placeholder="e-mailadres">
+                    <hr class="m-0 h-1 border-0 bg-white">
+                </div>
+                <button class="cursor-pointer border-0 bg-white p-4 text-sm font-semibold uppercase text-black">Inschrijven</button>
             </div>
         </div>
         <div>
-        <img src="{{ siteUrl('assets/logo_wit.svg') }}" alt="Logo" class="w-[120px] h-auto hidden lg:block">
+            <img src="{{ siteUrl('assets/logo_wit.svg') }}" alt="Logo" class="hidden h-auto w-[120px] lg:block">
         </div>
+    </div>
+    <div class="flex flex-col justify-between gap-16 w-full md:col-span-4 md:col-start-5">
+        <div class="grid grid-flow-col grid-cols-2 grid-rows-3 gap-y-12 md:gap-x-[172px]">
+            <a href="{{ siteUrl('agenda') }}" class="text-sm font-semibold text-inherit">Agenda</a>
+            <a href="{{ siteUrl('over') }}" class="text-sm font-semibold text-inherit">Atelierhouders</a>
+            <a href="{{ siteUrl('over') }}" class="text-sm font-semibold text-inherit">Over</a>
+            <a href="{{ siteUrl('over') }}" class="text-sm font-semibold text-inherit">Vrijwilligers</a>
+            <a href="{{ siteUrl('product') }}" class="text-sm font-semibold text-inherit">Shop</a>
         </div>
-        <div class="flex flex-col justify-between gap-32">
-            <div class="flex gap-[86px] md:gap-[172px]">
-                <div class="flex flex-col gap-12">
-                    <a href="{{ siteUrl('agenda') }}" class="text-sm font-semibold text-inherit">Agenda</a>
-                    <a href="{{ siteUrl('over') }}" class="text-sm font-semibold text-inherit">Atelierhouders</a>
-                    <a href="{{ siteUrl('over') }}" class="text-sm font-semibold text-inherit">Over</a>
-                </div>
-                <div class="flex flex-col gap-12">
-                    <a href="{{ siteUrl('over') }}" class="text-sm font-semibold text-inherit">Vrijwilligers</a>
-                    <a href="{{ siteUrl('product') }}" class="text-sm font-semibold text-inherit">Shop</a>
-                </div>
-            </div>
-            {% include 'UI-elements/contact-details.twig' with { footer: true } %}
-        </div>
-        <img src="{{ siteUrl('assets/logo_wit.svg') }}" alt="Logo" class="mt-[72px] block h-auto lg:hidden">
-    </footer>
+        {% include 'UI-elements/contact-details.twig' with { footer: true } %}
+    </div>
+    <img src="{{ siteUrl('assets/logo_wit.svg') }}" alt="Logo" class=" w-full md:w-[120px] md:col-span-6 lg:hidden">
+</footer>

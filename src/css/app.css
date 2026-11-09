@@ -1,59 +1,70 @@
+@font-face{
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url("fonts/Raleway-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
 @import "tailwindcss";
 @source "../../templates";
 
 @theme {
     --font-raleway: "Raleway", sans-serif;
-    --breakpoint-lg: 62rem;
-    --breakpoint-xl: 75rem;
 }
 
 @layer base {
     body {
-        width: 100vw;
-        margin: 0;
         font-family: var(--font-raleway);
     }
 
     h1 {
-        margin-top: 0;
-        margin-bottom: 16px;
-        font-size: clamp(40px, 1.646rem + 2.689vw, 53px);
-        font-weight: 600;
+        font-family: var(--font-raleway);
+        font-size: var(--text-5xl);
+        line-height: var(--text-5xl--line-height);
+        font-weight: var(--font-weight-semibold);
         text-transform: uppercase;
     }
 
     h2 {
-        font-size: clamp(36px, 1.646rem + 2.689vw, 42px);
-        font-weight: 600;
-        text-transform: uppercase;
+        font-family: var(--font-raleway);
+        font-size: var(--text-3xl);
+        line-height: var(--text-3xl--line-height);
+        font-weight: var(--font-weight-semibold);
+    }
+
+    h3 {
+        font-family: var(--font-raleway);
+        font-size: var(--text-2xl);
+        line-height: var(--text-2xl--line-height);
+        font-weight: var(--font-weight-semibold);
     }
 
     h4 {
-        font-size: clamp(27px, 1.646rem + 2.689vw, 31px);
-        font-weight: 600;
+        font-family: var(--font-raleway);
+        font-size: var(--text-base);
+        font-weight: 400;
         text-transform: uppercase;
     }
 
+    h5,
     h6 {
-        margin: 0;
-        font-size: clamp(14px, 1.646rem + 2.689vw, 16px);
-        font-weight: 600;
-    }
-
-    p,
-    a {
-        font-size: clamp(14px, 1.646rem + 2.689vw, 16px);
-        font-weight: 400;
+        font-family: var(--font-raleway);
+        font-size: var(--text-sm);
+        font-weight: var(--font-weight-semibold);
+        text-transform: uppercase;
     }
 
     p {
-        line-height: 1.4;
-    }
-
-    a {
-        display: inline-block;
-        color: inherit;
-        text-decoration: none;
-        cursor: pointer;
+        font-family: var(--font-raleway);
+        font-size: var(--text-base);
+        line-height: var(--text-base--line-height);
+        font-weight: 400;
     }
 }

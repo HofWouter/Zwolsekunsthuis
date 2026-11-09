@@ -1,4 +1,4 @@
-dateModified: 1794213203
+dateModified: 1794229998
 email:
   fromEmail: tzwolsekunsthuis@outlook.com
   fromName: "'t Zwolse Kunsthuis"
@@ -7,6 +7,7 @@ meta:
   __names__:
     1a8635f9-7daa-48a0-a0f5-8ce92a867c6a: "'t Zwolse Kunsthuis" # 't Zwolse Kunsthuis
     e977c17d-c61b-408c-98af-7a66b4fd482f: "'t Zwolse Kunsthuis" # 't Zwolse Kunsthuis
+    ee046f90-6830-4842-b867-24efd466b0d1: 'Public Schema' # Public Schema
 system:
   edition: solo
   live: true
