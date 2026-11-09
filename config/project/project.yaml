@@ -1,0 +1,22 @@
+dateModified: 1794213203
+email:
+  fromEmail: tzwolsekunsthuis@outlook.com
+  fromName: "'t Zwolse Kunsthuis"
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1a8635f9-7daa-48a0-a0f5-8ce92a867c6a: "'t Zwolse Kunsthuis" # 't Zwolse Kunsthuis
+    e977c17d-c61b-408c-98af-7a66b4fd482f: "'t Zwolse Kunsthuis" # 't Zwolse Kunsthuis
+system:
+  edition: solo
+  live: true
+  name: "'t Zwolse Kunsthuis"
+  schemaVersion: 5.12.0.1
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

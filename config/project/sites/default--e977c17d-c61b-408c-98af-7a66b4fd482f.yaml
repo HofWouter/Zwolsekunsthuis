@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: nl
+name: "'t Zwolse Kunsthuis"
+primary: true
+siteGroup: 1a8635f9-7daa-48a0-a0f5-8ce92a867c6a # 't Zwolse Kunsthuis
+sortOrder: 1

@@ -1,0 +1,20 @@
+    <div class="m-4">
+        <h1>Nieuws</h1>
+        <div class="flex w-full flex-col gap-5 xl:flex-row">
+            <div class="grid w-full grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-4 lg:grid-cols-[repeat(4,minmax(190px,1fr))]">
+                {% include 'UI-elements/card.twig' %}
+                {% include 'UI-elements/card.twig' %}
+                {% include 'UI-elements/card.twig' %}
+                {% include 'UI-elements/card.twig' %}
+            </div>
+            <div class="box-border flex w-full cursor-pointer flex-col items-center justify-center border-4 border-black bg-white p-4 xl:w-[10%] xl:justify-end">
+                <button class="flex cursor-pointer flex-col justify-end gap-1 bg-transparent p-2 pb-0 pl-0 text-sm font-semibold uppercase transition-[gap] duration-300 hover:gap-3">
+                    <div class="flex items-center gap-2 [&>span]:text-black">
+                        <span>Bekijk alles</span>
+                        <img src="{{ siteUrl('assets/arrow_right.svg') }}" alt="Arrow Right" class="">
+                    </div>
+                    <hr class="m-0 h-1 border-0 bg-black">
+                </button>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,34 @@
+    <nav aria-label="Hoofdnavigatie" id="nav" class="fixed inset-x-0 top-0 z-[1000] opacity-100 transition-transform duration-300">
+        <div class="relative z-[1000] flex items-center justify-between bg-white p-4" data-nav-bar>
+                <a href="{{ siteUrl() }}" class="inline-flex">
+                <img src="{{ siteUrl('assets/logo.svg') }}" alt="Logo" class="w-[120px] h-auto">
+                </a>
+                <div class="fixed inset-x-0 top-[76px] bottom-0 z-[1100] hidden flex-col items-start justify-start overflow-y-auto bg-black p-4 md:absolute md:inset-auto md:left-1/2 md:flex md:flex-row md:items-center md:justify-end md:overflow-visible md:bg-transparent md:p-0 md:-translate-x-1/2 md:flex-1 group/nav" id="mobile-nav-panel">
+                    <div class="flex w-full flex-col items-start gap-6 pb-6 text-white md:w-auto md:flex-row md:items-center md:gap-[5vw] md:p-0 md:text-black">
+                        <a href="{{ siteUrl('agenda') }}" class="z-[1000] cursor-pointer text-sm font-semibold text-inherit md:text-base md:group-hover/nav:text-white">Agenda</a>
+                        <a href="{{ siteUrl('over') }}" class="z-[1000] cursor-pointer text-sm font-semibold text-inherit md:text-base md:group-hover/nav:text-white">Atelierhouders</a>
+                        <a href="{{ siteUrl('over') }}" class="z-[1000] cursor-pointer text-sm font-semibold text-inherit md:text-base md:group-hover/nav:text-white">Over</a>
+                        <a href="{{ siteUrl('over') }}" class="z-[1000] cursor-pointer text-sm font-semibold text-inherit md:text-base md:group-hover/nav:text-white">Vrijwilligers</a>
+                        <a href="{{ siteUrl('product') }}" class="z-[1000] cursor-pointer text-sm font-semibold text-inherit md:text-base md:group-hover/nav:text-white">Shop</a>
+                    </div>
+                    <div class="absolute top-0 z-[100] flex w-[calc(100%-96px)] flex-col gap-[72px] bg-black p-12 pt-20 text-white opacity-0 invisible transition-[transform,opacity] duration-200 group-hover/nav:visible group-hover/nav:translate-y-[186px] group-hover/nav:opacity-100 max-md:static max-md:w-full max-md:gap-6 max-md:bg-transparent max-md:p-0 max-md:opacity-100 max-md:visible">
+                        <div class="flex gap-[calc(5vw-24px)] max-md:flex-col max-md:gap-6">
+                            <div class="flex flex-col gap-4 text-base font-semibold text-[#7c7c7c]">
+                                    <a href="{{ siteUrl('expositie') }}" class="flex flex-col gap-4 text-base font-semibold text-[#7c7c7c]">Nu te zien</a>
+                                    <a href="{{ siteUrl('agenda') }}#coming-up" class="flex flex-col gap-4 text-base font-semibold text-[#7c7c7c]">Coming up</a>
+                            </div>
+                            <div class="flex flex-col gap-4 text-base font-semibold text-[#7c7c7c]">
+                                    <a href="{{ siteUrl('product') }}" class="flex flex-col gap-4 text-base font-semibold text-[#7c7c7c]">Elyne Dunning</a>
+                                    <a href="{{ siteUrl('product') }}" class="flex flex-col gap-4 text-base font-semibold text-[#7c7c7c]">Jonatan Ivgi</a>
+                                    <a href="{{ siteUrl('product') }}" class="flex flex-col gap-4 text-base font-semibold text-[#7c7c7c]">Ilyj Ivgi</a>
+                            </div>
+                        </div>
+                        {% include 'UI-elements/contact-details.twig' %}
+                    </div>
+                </div>
+                <button class="flex items-center justify-center p-0 md:hidden" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Open menu">
+                    <img src="{{ siteUrl('assets/Menu.svg') }}" alt="Menu" class="h-auto w-12">
+                </button>
+        </div>
+        <hr class="m-0 h-1 border-0 bg-black">
+    </nav>

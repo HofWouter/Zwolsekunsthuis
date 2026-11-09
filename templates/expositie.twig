@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ siteUrl('assets/app.css') }}">
+    <title>'t Zwolse kunsthuis</title>
+</head>
+<body>
+{% include 'UI-elements/nav-bar.twig' %}
+<div class="m-4 mt-24 md:min-h-[calc(90vh-64px)] [&>h1]:mt-0 box-border flex w-auto flex-col-reverse gap-4 md:min-h-[calc(90vh-64px)] md:flex-row md:box-border">
+        <div class="flex w-auto flex-col justify-start gap-9 border-4 border-t-4 border-black p-4 md:max-w-[500px] md:w-[calc(50vw-32px)] md:border-l-4">
+            <div class="flex flex-col gap-2 [&>*]:m-0">
+                <h1>Een feest waarbij velen sterven</h1>
+                <h4>Gideon Eilert</h4>
+            </div>
+            <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-2 [&>*]:m-0">
+                    <h6>Expositie</h6>
+                    <h6>16 juni t/m 23 juli</h6>
+                </div>
+                <a class="label" href="{{ siteUrl('agenda') }}">
+                    <div class="m-0 flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-[30px]">
+                    <p class="m-0">Nu te zien</p>
+                    <p class="m-0">Agenda</p>
+                    </div>
+                </a>
+            </div>
+            <p>De installatie Circuits van de Amsterdamse ontwerp-collectief Experimental Jetset is speciaal ontworpen voor de omloop bovenaan de historische trap van het museum. Circuits laat zien hoe informatie ooit letterlijk een fysieke vorm had: geluid, beeld en andere data werden opgeslagen op tastbare dragers.</p>
+        </div>
+        <div class="group relative flex aspect-square cursor-pointer justify-center overflow-hidden border-4 border-black p-4 before:content-[''] before:pointer-events-none before:absolute before:inset-0 before:bg-black/40 before:opacity-0 before:transition-opacity hover:before:opacity-100 md:aspect-auto md:self-stretch">
+            <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="box-border h-auto w-full object-cover">
+            <p class="pointer-events-none absolute left-1/2 top-1/2 z-10 m-0 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-white opacity-0 transition-opacity group-hover:opacity-100">Lorem ipsum dolor sit amet</p>
+        </div>
+</div>
+<div class="flex flex-col gap-4 bg-[#d3d3d3] px-4 py-8">
+        <div class="border-4 border-black px-4 py-8 [&>h2]:mt-0">
+            <h2 class="w-full md:w-1/2">Lorem ipsum dolor sit amet</h2>
+            <p class="w-full md:w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
+            <h6 class="w-full md:w-1/2">Lorem ipsum dolor sit amet</h6>
+            <p class="w-full md:w-1/2">erat vitae massa posuere, eget fermentum enim auctor. Nam eu viverra tortor. Sed feugiat erat ut suscipit semper.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
+            <h6 class="w-full md:w-1/2">Lorem ipsum dolor sit amet</h6>
+            <p class="w-full md:w-1/2">erat vitae massa posuere, eget fermentum enim auctor. Nam eu viverra tortor. Sed feugiat erat ut suscipit semper.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
+        </div>
+        <div class="grid h-full w-full grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-4 lg:grid-cols-[repeat(4,minmax(190px,1fr))]">
+            <div class="group relative flex aspect-square cursor-pointer justify-center overflow-hidden border-4 border-black p-4 before:content-[''] before:pointer-events-none before:absolute before:inset-0 before:bg-black/40 before:opacity-0 before:transition-opacity hover:before:opacity-100 md:aspect-auto md:self-stretch">
+                <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="box-border h-auto w-full object-cover object-cover">
+                <p class="pointer-events-none absolute left-1/2 top-1/2 z-10 m-0 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-white opacity-0 transition-opacity group-hover:opacity-100">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="group relative flex aspect-square cursor-pointer justify-center overflow-hidden border-4 border-black p-4 before:content-[''] before:pointer-events-none before:absolute before:inset-0 before:bg-black/40 before:opacity-0 before:transition-opacity hover:before:opacity-100 md:aspect-auto md:self-stretch">
+                <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="box-border h-auto w-full object-cover object-cover">
+                <p class="pointer-events-none absolute left-1/2 top-1/2 z-10 m-0 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-white opacity-0 transition-opacity group-hover:opacity-100">Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+        <div class="border-4 border-black px-4 py-8 [&>h2]:mt-0">
+            <h2 class="w-full md:w-1/2">Over Gideon Eilert</h2>
+            <p class="w-full md:w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc eu nunc. Sed euismod </p>
+            <h6 class="w-full md:w-1/2">Lorem ipsum dolor sit amet</h6>
+            <p class="w-full md:w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut</p>
+        </div>
+</div>
+{% include 'UI-elements/nieuws-block.twig' %}
+{% include 'UI-elements/footer.twig' %}
+<script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
+</body>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ siteUrl('assets/app.css') }}">
+    <title>'t Zwolse kunsthuis</title>
+</head>
+<body>
+{% include 'UI-elements/nav-bar.twig' %}
+<div class="m-4 mt-24 md:min-h-[calc(90vh-64px)] [&>h1]:mt-0">
+    <div class="flex w-full justify-between">
+        <a href="{{ siteUrl('agenda') }}"><h1 class="text-[clamp(36px,1.646rem+2.689vw,53px)]">Agenda</h1></a>
+        <a href="{{ siteUrl('archief') }}"><h1 class="text-[#d3d3d3] text-[clamp(36px,1.646rem+2.689vw,53px)]">Archief</h1></a>
+    </div>
+    <div class="box-border flex w-auto flex-col md:flex-row md:min-h-[calc(90vh-64px-48px)]">
+    {% include 'UI-elements/header.twig' %}
+    </div>
+</div>
+{% include 'UI-elements/agenda-block.twig' %}
+{% include 'UI-elements/footer.twig' %}
+<script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
+<script src="{{ siteUrl('assets/berichten-toggle.js') }}"></script>
+</body>

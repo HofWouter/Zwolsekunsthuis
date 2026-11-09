@@ -1,0 +1,18 @@
+<div>
+    <div class="flex w-full flex-col gap-5 xl:flex-col">
+        <div id="archief-kaarten" class="grid w-full grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-4 lg:grid-cols-[repeat(4,minmax(190px,1fr))]">
+            {% for card in 1..7 %}
+                {% include 'UI-elements/card.twig' %}
+            {% endfor %}
+        </div>
+        <button id="bekijk_meer" class="box-border flex w-full cursor-pointer flex-col items-center justify-center border-4 border-black bg-white p-4 xl:w-full" type="button" aria-expanded="false" aria-controls="archief-kaarten">
+            <span class="flex cursor-pointer flex-col justify-end gap-1 bg-transparent p-2 pb-0 pl-0 text-sm font-semibold uppercase transition-[gap] duration-300 hover:gap-3">
+                <span class="flex items-center gap-2 text-black">
+                    <span>Bekijk meer</span>
+                    <img src="{{ siteUrl('assets/arrow_right.svg') }}" alt="Arrow Right">
+                </span>
+                <hr class="m-0 h-1 border-0 bg-black">
+            </span>
+        </button>
+    </div>
+</div>
