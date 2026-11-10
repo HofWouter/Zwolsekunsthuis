@@ -1,1 +1,29 @@
-document.querySelectorAll(`[data-product-carousel]`).forEach(e=>{let t=e.querySelector(`[data-carousel-items]`),n=e.querySelectorAll(`[data-carousel-item]`),r=e.querySelector(`[data-carousel-prev]`),i=e.querySelector(`[data-carousel-next]`),a=0;if(!t||n.length===0||!r||!i)return;let o=()=>{let e=a*100,o=a*20;t.style.transform=`translateX(calc(-${e}% - ${o}px))`,r.disabled=a===0,i.disabled=a===n.length-1};r.addEventListener(`click`,()=>{a>0&&(--a,o())}),i.addEventListener(`click`,()=>{a<n.length-1&&(a+=1,o())}),o()});
+// templates/UI-elements/product-carousel.js
+document.querySelectorAll("[data-product-carousel]").forEach((carousel) => {
+	const track = carousel.querySelector("[data-carousel-items]");
+	const items = carousel.querySelectorAll("[data-carousel-item]");
+	const previousButton = carousel.querySelector("[data-carousel-prev]");
+	const nextButton = carousel.querySelector("[data-carousel-next]");
+	let activeIndex = 0;
+	if (!track || items.length === 0 || !previousButton || !nextButton) return;
+	const updateCarousel = () => {
+		const offsetPercentage = activeIndex * 100;
+		const offsetPixels = activeIndex * 20;
+		track.style.transform = `translateX(calc(-${offsetPercentage}% - ${offsetPixels}px))`;
+		previousButton.disabled = activeIndex === 0;
+		nextButton.disabled = activeIndex === items.length - 1;
+	};
+	previousButton.addEventListener("click", () => {
+		if (activeIndex > 0) {
+			activeIndex -= 1;
+			updateCarousel();
+		}
+	});
+	nextButton.addEventListener("click", () => {
+		if (activeIndex < items.length - 1) {
+			activeIndex += 1;
+			updateCarousel();
+		}
+	});
+	updateCarousel();
+});

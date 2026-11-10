@@ -58,7 +58,6 @@
         font-family: var(--font-raleway);
         font-size: var(--text-sm);
         font-weight: var(--font-weight-semibold);
-        text-transform: uppercase;
     }
 
     p {

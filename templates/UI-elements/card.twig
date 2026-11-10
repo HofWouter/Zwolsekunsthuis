@@ -1,8 +1,8 @@
 <div class="flex flex-col items-end" data-card-item>
-    <div class="box-border flex w-full cursor-pointer flex-col justify-end border-4 border-black bg-white p-4 aspect-square w-full overflow-hidden border-b-0">
+    <div class="box-border flex w-full cursor-pointer flex-col justify-end {{ borderless|default(false) ? 'border-b-4 border-black' : 'border-4 border-black border-b-0' }} bg-white p-4 aspect-square overflow-hidden">
         <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Card Image" class="block h-full w-full object-cover">
     </div>
-    <div class="box-border flex flex-col gap-6 w-full cursor-pointer justify-end border-4 border-black bg-white p-4 transition-transform duration-300 hover:-translate-y-8">
+    <div class="box-border flex w-full cursor-pointer flex-col justify-end {{ borderless|default(false) ? '' : 'border-4 border-black' }} gap-6 bg-white p-4 transition-transform duration-300 hover:-translate-y-8">
         <div class="flex flex-col gap-2">
             <h2 class="font-raleway text-3xl uppercase font-semibold">Split I Second</h2>
             <p class="font-raleway text-base text-normal">Split | Second invites visitors to examine how we measure time.</p>

@@ -1,27 +1,32 @@
-
 <div class="mt-auto flex w-full flex-row items-end justify-between text-white max-md:gap-8">
                         <div class="flex w-[calc(100%-96px)] flex-row items-end justify-between max-md:w-auto max-md:flex-col max-md:items-start max-md:gap-5">
-                            <div class="{{ footer|default(false) ? 'block' : 'hidden md:block' }}">
-                                <h6 class="text-sm font-semibold">Bezoekersinformatie</h6>
+                            <div class="flex flex-col gap-4 {{ footer|default(false) ? '' : 'hidden md:flex' }}">
+                                <h6 class="text-base font-semibold">Bezoekersinformatie</h6>
                                 <div>
-                                    <p class="text-sm leading-relaxed">'t Zwolse kunsthuis
-                                    <br>
-                                    Praubstraat 4
-                                    <br>
-                                    8011 PN Zwolle
-                                    <br>
-                                    Nederland
-                                    </p>
+                                    <div>
+                                        <p class="text-sm leading-relaxed">'t Zwolse kunsthuis
+                                        <br>
+                                        Praubstraat 4
+                                        <br>
+                                        8011 PN Zwolle
+                                        <br>
+                                        Nederland
+                                        </p>
+                                    </div>
+                                    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Praubstraat+4%2C+8011+PN+Zwolle" class="cursor-pointer text-sm text-inherit underline" target="_blank" rel="noopener noreferrer">Routebeschrijving</a>
                                 </div>
-                                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Praubstraat+4%2C+8011+PN+Zwolle" class="cursor-pointer text-sm text-inherit underline" target="_blank" rel="noopener noreferrer">Routebeschrijving</a>
                             </div>
                             <a href="{{ siteUrl('over') }}#openingstijden" class="text-sm">We zijn nu geopend!</a>
                             </div>
                             <div class="flex flex-col gap-4 max-md:gap-3">
                                 <h6 class="text-base font-semibold">Volg ons</h6>
                                 <div class="flex gap-4">
-                                    <a href="https://www.facebook.com/profile.php?id=61584978801421" aria-label="Volg 't Zwolse kunsthuis op Facebook" target="_blank" rel="noopener noreferrer"><img src="{{ siteUrl('assets/facebook.svg') }}" alt="Facebook" class="h-auto w-6"></a>
-                                    <a href="https://www.instagram.com/tzwolsekunsthuis/" aria-label="Volg 't Zwolse kunsthuis op Instagram" target="_blank" rel="noopener noreferrer"><img src="{{ siteUrl('assets/instagram.svg') }}" alt="Instagram" class="h-auto w-6"></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61584978801421" aria-label="Volg 't Zwolse kunsthuis op Facebook" target="_blank" rel="noopener noreferrer">
+                                        <img src="{{ siteUrl('assets/facebook.svg') }}" alt="Facebook" class="h-auto w-6">
+                                    </a>
+                                    <a href="https://www.instagram.com/tzwolsekunsthuis/" aria-label="Volg 't Zwolse kunsthuis op Instagram" target="_blank" rel="noopener noreferrer">
+                                        <img src="{{ siteUrl('assets/instagram.svg') }}" alt="Instagram" class="h-auto w-6">
+                                    </a>
                                 </div>
                             </div>
 </div>

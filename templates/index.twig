@@ -8,18 +8,18 @@
 </head>
 <body>
     {% include 'UI-elements/nav-bar.twig' %}
-    <div class="m-4 mt-24 md:min-h-[calc(90vh-64px)] [&>h1]:mt-0 box-border flex w-auto flex-col md:flex-row">
+    <div class="m-4 mt-24 md:min-h-[calc(90vh-64px)] box-border flex w-auto flex-col md:flex-row">
         <div class="group relative flex aspect-square cursor-pointer justify-center overflow-hidden border-4 border-black p-4 before:content-[''] before:pointer-events-none before:absolute before:inset-0 before:bg-black/40 before:opacity-0 before:transition-opacity hover:before:opacity-100 md:aspect-auto md:self-stretch">
             <p class="pointer-events-none absolute left-1/2 top-1/2 z-10 m-0 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-white opacity-0 transition-opacity group-hover:opacity-100">Lorem ipsum dolor sit amet</p>
             <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="box-border h-auto w-full object-cover">
         </div>
         <div class="flex flex-col justify-end gap-9 border-4 border-t-0 border-black p-4 md:max-w-[500px] md:border-l-0 md:border-t-4">
-            <div class="flex flex-col gap-2 [&>*]:m-0">
+            <div class="flex flex-col gap-2">
                 <h1>Een feest waarbij velen sterven</h1>
                 <h4>Gideon Eilert</h4>
             </div>
             <div class="flex items-center justify-between">
-                <div class="flex flex-col gap-2 [&>*]:m-0">
+                <div class="flex flex-col gap-2">
                     <h6>Expositie</h6>
                     <h6>16 juni t/m 23 juli</h6>
                 </div>
@@ -33,87 +33,8 @@
             </div>
         </div>
     </div>
-    <div class="m-4">
-        <h1>Nieuws</h1>
-        <div class="flex w-full flex-col gap-5 xl:flex-row">
-            <div class="grid w-full grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-4 lg:grid-cols-[repeat(4,minmax(190px,1fr))]">
-                {% for card in 1..4 %}
-                    <div class="flex flex-col items-end" data-card-item>
-                        <div class="box-border flex w-full cursor-pointer flex-col justify-end border-4 border-black bg-white p-4 aspect-square w-full overflow-hidden border-b-0">
-                            <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Card Image" class="block h-full w-full object-cover">
-                        </div>
-                        <div class="box-border flex w-full cursor-pointer flex-col justify-end border-4 border-black bg-white p-4 transition-transform duration-300 hover:-translate-y-8">
-                            <div>
-                                <h2>Split I Second</h2>
-                                <p>Split | Second invites visitors to examine how we measure time.</p>
-                            </div>
-                            <button class="flex cursor-pointer flex-col justify-end gap-1 bg-transparent p-2 pb-0 pl-0 text-sm font-semibold uppercase transition-[gap] duration-300 hover:gap-3" type="button">
-                                <div class="flex items-center gap-2 [&>span]:text-black">
-                                    <span>Lees verder</span>
-                                    <img src="{{ siteUrl('assets/arrow_right.svg') }}" alt="Arrow Right" class="">
-                                </div>
-                                <hr class="m-0 h-1 border-0 bg-black">
-                            </button>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-            <div class="box-border flex w-full cursor-pointer flex-col justify-end border-4 border-black bg-white p-4 flex w-full items-center justify-center xl:w-[10%] xl:justify-end">
-                <button class="flex cursor-pointer flex-col justify-end gap-1 bg-transparent p-2 pb-0 pl-0 text-sm font-semibold uppercase transition-[gap] duration-300 hover:gap-3" type="button">
-                    <div class="flex items-center gap-2 [&>span]:text-black">
-                        <span>Bekijk alles</span>
-                        <img src="{{ siteUrl('assets/arrow_right.svg') }}" alt="Arrow Right" class="">
-                    </div>
-                    <hr class="m-0 h-1 border-0 bg-black">
-                </button>
-            </div>
-        </div>
-    </div>
+    {% include 'UI-elements/nieuws-block.twig' %}
     {% include 'UI-elements/footer.twig' %}
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const nav = document.querySelector('nav');
-            const toggle = document.getElementById('menu-toggle');
-            const panel = document.getElementById('mobile-nav-panel');
-            const footer = document.getElementById('footer');
-
-            if (nav && toggle && panel) {
-                const setMenuState = (isOpen) => {
-                    const navBar = nav.querySelector('[data-nav-bar]');
-                    const navBarLine = nav.querySelector('hr');
-
-                    panel.classList.toggle('hidden', !isOpen);
-                    panel.classList.toggle('flex', isOpen);
-                    navBar?.classList.toggle('bg-black', isOpen);
-                    navBar?.classList.toggle('bg-white', !isOpen);
-                    navBarLine?.classList.toggle('invert', isOpen);
-                    nav.querySelectorAll('img').forEach((image) => {
-                        if (image.closest('[data-nav-bar]')) image.classList.toggle('invert', isOpen);
-                    });
-                    document.body.classList.toggle('overflow-hidden', isOpen);
-                    toggle.setAttribute('aria-expanded', String(isOpen));
-                };
-
-                toggle.addEventListener('click', () => {
-                    setMenuState(toggle.getAttribute('aria-expanded') !== 'true');
-                });
-
-                panel.querySelectorAll('a').forEach((link) => {
-                    link.addEventListener('click', () => setMenuState(false));
-                });
-            }
-
-            if (nav && footer && 'IntersectionObserver' in window) {
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach((entry) => {
-                        nav.classList.toggle('-translate-y-full', entry.isIntersecting);
-                        nav.classList.toggle('opacity-0', entry.isIntersecting);
-                    });
-                }, { threshold: 0.1 });
-
-                observer.observe(footer);
-            }
-        });
-    </script>
+    <script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
 </body>
 </html>

@@ -8,9 +8,9 @@
 <body>
 {% include 'UI-elements/nav-bar.twig' %}
 <div class="m-4 mt-24 md:min-h-[calc(90vh-64px)] [&>h1]:mt-0">
-    <div class="flex w-full flex-row justify-between">
-        <a href="{{ siteUrl('agenda') }}"><h1 class="text-[#d3d3d3] text-[clamp(36px,1.646rem+2.689vw,53px)]">Agenda</h1></a>
-        <a href="{{ siteUrl('archief') }}"><h1 class="text-[clamp(36px,1.646rem+2.689vw,53px)]">Archief</h1></a>
+    <div class="flex w-full justify-between mb-4">
+        <a href="{{ siteUrl('agenda') }}"><h1 class="text-4xl md:text-5xl text-[#d3d3d3]">Agenda</h1></a>
+        <a href="{{ siteUrl('archief') }}"><h1 class="text-4xl md:text-5xl ">Archief</h1></a>
     </div>
     {% include 'UI-elements/archief-block.twig' %}
 </div>
