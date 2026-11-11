@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'t Zwolse kunsthuis</title>
+    <link rel="stylesheet" href="{{ siteUrl('assets/app.css') }}">
+</head>
+<body>
+    {% include 'UI-elements/nav-bar.twig' %}
+    <main class="mt-24 min-h-[100vh]">
+        <header class="mx-4 pb-6 md:mx-4 md:pb-4">
+            <div class="grid grid-cols-6 justify-between gap-4">
+                <div class="col-span-6 flex flex-col gap-4 md:col-span-3">
+                    <h1 class="m-0 text-5xl">Doorzoek onze winkel</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </header>
+        <section class="mx-4 py-6 md:mx-8 md:py-8" aria-label="Producten">
+            <div class="mb-6 border-b border-black pb-3">
+                <h2 class="m-0 text-xl">5 items</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {% include 'UI-elements/shop-item.twig' %}
+                {% include 'UI-elements/shop-item.twig' %}
+                {% include 'UI-elements/shop-item.twig' %}
+                {% include 'UI-elements/shop-item.twig' %}
+                {% include 'UI-elements/shop-item.twig' %}
+            </div>
+        </section>
+    </main>
+    {% include 'UI-elements/footer.twig' %}
+    <script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
+</body>
+</html>

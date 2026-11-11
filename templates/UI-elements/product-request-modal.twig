@@ -1,11 +1,13 @@
 <div id="product-request-modal" class="fixed inset-0 z-[1200] hidden" aria-hidden="true">
-    <div class="absolute inset-0 bg-black/70" data-close-product-modal></div>
-    <div class="relative z-10 mx-auto mt-20 w-[min(90vw,520px)] border-4 border-black bg-white shadow-[0_0_0_8px_rgba(0,0,0,0.05)]">
+    <div class="absolute inset-0 bg-black/60" data-close-product-modal></div>
+    <div class="relative z-10 mx-auto mt-20 w-[min(90vw,520px)] border-4 border-black bg-white">
         <div class="mb-6 flex items-start justify-between gap-4 p-4">
             <div>
                 <h2 class="mt-2 font-raleway text-3xl font-semibold uppercase">Aanvraag</h2>
             </div>
-            <button id="close-product-modal" class="flex h-10 w-10 items-center justify-center border-4 border-black text-xl leading-none" type="button" aria-label="Sluit modal">×</button>
+            <button id="close-product-modal" class="flex h-10 w-10 items-center justify-center border-4 border-black text-xl leading-none" type="button" aria-label="Sluit aanvraag">
+                <img src="{{ siteUrl('assets/close.svg') }}" alt="Sluit aanvraag" class="w-6 h-6">
+            </button>
         </div>
 
         <form id="product-request-form" class="flex flex-col">

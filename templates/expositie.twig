@@ -7,59 +7,71 @@
 </head>
 <body>
 {% include 'UI-elements/nav-bar.twig' %}
-<main class="mt-18">
-    <section class="grid bg-black text-white md:min-h-[calc(90vh-6rem)] md:grid-cols-2">
-        <div class="flex flex-col justify-between gap-10 px-4 py-8 md:px-10 md:py-12">
-            <div>
-                <h1 class="mb-4 text-5xl leading-[0.95]">Een feest waarbij velen sterven</h1>
-                <h4>Gideon Eilert</h4>
-            </div>
-            <div>
-                <div class="mb-6 flex justify-between gap-4 border-y-4 border-white py-4">
-                    <span>Expositie</span>
-                    <span>16 juni 2026 t/m 23 juli 2026</span>
+<main class="flex flex-col mt-18 gap-8 mb-8">
+    <div>
+        <section class="grid min-h-[calc(100dvh-6rem)] bg-black text-white md:grid-cols-2">
+            <div class="flex flex-col justify-between px-4 py-8 md:px-4 md:py-12">
+                <div class="flex flex-col gap-10">
+                    <div>
+                        <h1 class="mb-4 text-5xl leading-[0.95]">Een feest waarbij velen sterven</h1>
+                        <h4>Gideon Eilert</h4>
+                    </div>
+                    <div>
+                        <div class="mb-6 flex justify-between gap-4 border-y-4 border-white py-4">
+                            <span>Expositie</span>
+                            <span>16 juni 2026 t/m 23 juli 2026</span>
+                        </div>
+                        <p>De installatie Circuits van de Amsterdamse ontwerp-collectief Experimental Jetset is speciaal ontworpen voor de omloop bovenaan de historische trap van het museum. Circuits laat zien hoe informatie ooit letterlijk een fysieke vorm had: geluid, beeld en andere data werden opgeslagen op tastbare dragers.</p>
+                    </div>
+                    
                 </div>
-                <p>De installatie Circuits van de Amsterdamse ontwerp-collectief Experimental Jetset is speciaal ontworpen voor de omloop bovenaan de historische trap van het museum. Circuits laat zien hoe informatie ooit letterlijk een fysieke vorm had: geluid, beeld en andere data werden opgeslagen op tastbare dragers.</p>
+                <a href="#first-section" class="group hidden md:flex flex-col w-fit self-start cursor-pointer uppercase font-semibold p-4 hover:bg-white hover:text-black">
+                    <div>
+                        <span>Lees verder</span>
+                        <img src="{{ siteUrl('assets/arrow_right.svg') }}" alt="Arrow Right" class="ml-2 inline h-4 w-4 invert group-hover:invert-0">
+                    </div>
+                    <span class="mt-1 h-1 w-full bg-white group-hover:bg-black"></span>
+                </a>
             </div>
-        </div>
-        <div class="group relative min-h-[22rem] overflow-hidden border-4 border-black md:min-h-0">
-            <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="absolute inset-0 h-full w-full object-cover">
-        </div>
-    </section>
-    <section class="mx-4 grid gap-8 py-12 md:mx-8 md:grid-cols-2 md:gap-x-16 md:gap-y-8 md:py-16 [&>div>h2]:mt-0">
-        <div>
-            <h2 class="mb-4">Lorem ipsum dolor sit amet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
-        </div>
-        <div>
-            <h6>Lorem ipsum dolor sit amet</h6>
-            <p>erat vitae massa posuere, eget fermentum enim auctor. Nam eu viverra tortor. Sed feugiat erat ut suscipit semper.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
-        </div>
-        <div class="md:col-start-2">
-            <h6>Lorem ipsum dolor sit amet</h6>
-            <p>erat vitae massa posuere, eget fermentum enim auctor. Nam eu viverra tortor. Sed feugiat erat ut suscipit semper.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
-        </div>
-    </section>
-    <section class="grid grid-cols-1 gap-px bg-black py-px md:grid-cols-2">
-        <div class="group relative aspect-[4/3] overflow-hidden border-4 md:border-r-0 border-b-0 border-black">
-            <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="h-full w-full object-cover">
-        </div>
-        <div class="group relative aspect-[4/3] overflow-hidden border-4 border-black">
-            <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="h-full w-full object-cover">
-        </div>
-    </section>
-    <section class="grid gap-8 bg-black px-4 py-12 text-white md:grid-cols-2 md:gap-16 md:px-8 md:py-16 [&>div>h2]:mt-0">
-        <h2 class="uppercase">Gideon Eilert</h2>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc eu nunc. Sed euismod </p>
-            <h6>Lorem ipsum dolor sit amet</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut</p>
-        </div>
-    </section>
+            <div class="group relative min-h-[22rem] overflow-hidden border-4 border-black md:min-h-0 p-4">
+                <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="absolute inset-0 h-full w-full object-cover">
+            </div>
+        </section>
+        <section id="first-section" class="mx-4 grid gap-8 my-12 md:mx-4 md:grid-cols-2 md:gap-x-8 md:gap-y-8 md:my-16 [&>div>h2]:mt-0">
+            <div>
+                <h2 class="mb-4">Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
+            </div>
+            <div>
+                <h6>Lorem ipsum dolor sit amet</h6>
+                <p>erat vitae massa posuere, eget fermentum enim auctor. Nam eu viverra tortor. Sed feugiat erat ut suscipit semper.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
+            </div>
+            <div class="md:col-start-2">
+                <h6>Lorem ipsum dolor sit amet</h6>
+                <p>erat vitae massa posuere, eget fermentum enim auctor. Nam eu viverra tortor. Sed feugiat erat ut suscipit semper.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc quam, sodales sodales dapibus quis, suscipit vel erat. Cras vehicula, enim sit amet hendrerit condimentum, nibh tellus accumsan velit, at lacinia ligula lectus ut ipsum.</p>
+            </div>
+        </section>
+        <section class="grid grid-cols-1 gap-px bg-black py-px md:grid-cols-2">
+            <div class="group relative aspect-[4/3] overflow-hidden border-4 md:border-r-0 border-b-0 border-black">
+                <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="h-full w-full object-cover">
+            </div>
+            <div class="group relative aspect-[4/3] overflow-hidden border-4 border-black">
+                <img src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="Header Image" class="h-full w-full object-cover">
+            </div>
+        </section>
+        <section class="grid gap-8 bg-black px-4 py-12 text-white md:grid-cols-2 md:gap-16 md:px-4 md:py-16 [&>div>h2]:mt-0">
+            <h2 class="uppercase">Gideon Eilert</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc eu nunc. Sed euismod </p>
+                <h6>Lorem ipsum dolor sit amet</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut</p>
+            </div>
+        </section>
+    </div>
+    {% include 'UI-elements/nieuws-block.twig' with {
+        titel: "Nieuws"
+    } %}
 </main>
-{% include 'UI-elements/nieuws-block.twig' with {
-    titel: "Nieuws"
-} %}
 {% include 'UI-elements/footer.twig' %}
 <script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
 </body>
