@@ -1,0 +1,31 @@
+<div id="product-request-modal" class="fixed inset-0 z-[1200] hidden" aria-hidden="true">
+    <div class="absolute inset-0 bg-black/70" data-close-product-modal></div>
+    <div class="relative z-10 mx-auto mt-20 w-[min(90vw,520px)] border-4 border-black bg-white shadow-[0_0_0_8px_rgba(0,0,0,0.05)]">
+        <div class="mb-6 flex items-start justify-between gap-4 p-4">
+            <div>
+                <h2 class="mt-2 font-raleway text-3xl font-semibold uppercase">Aanvraag</h2>
+            </div>
+            <button id="close-product-modal" class="flex h-10 w-10 items-center justify-center border-4 border-black text-xl leading-none" type="button" aria-label="Sluit modal">×</button>
+        </div>
+
+        <form id="product-request-form" class="flex flex-col">
+            <div class="flex flex-col gap-4 p-4">
+                <label class="flex flex-col gap-2 font-raleway text-sm font-semibold uppercase">
+                    Naam
+                    <input class="border-4 border-black p-3 text-base font-normal normal-case" type="text" name="name" placeholder="Jouw naam" required>
+                </label>
+
+                <label class="flex flex-col gap-2 font-raleway text-sm font-semibold uppercase">
+                    E-mail
+                    <input class="border-4 border-black p-3 text-base font-normal normal-case" type="email" name="email" placeholder="jij@email.nl" required>
+                </label>
+
+                <label class="flex flex-col gap-2 font-raleway text-sm font-semibold uppercase">
+                    Bericht
+                    <textarea class="min-h-[120px] border-4 border-black p-3 text-base font-normal normal-case" name="message" placeholder="Ik wil meer weten over dit kunstwerk..." required></textarea>
+                </label>
+            </div>
+            <button class="cursor-pointer border-0 bg-black p-4 font-raleway text-sm font-semibold uppercase text-white" type="submit">Verstuur aanvraag</button>
+        </form>
+    </div>
+</div>

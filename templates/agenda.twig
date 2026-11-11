@@ -15,7 +15,9 @@
     {% include 'UI-elements/header.twig' %}
     </div>
 </div>
-{% include 'UI-elements/agenda-block.twig' %}
+{% include 'UI-elements/nieuws-block.twig' with {
+     titel: 'Coming up'
+    } %}
 {% include 'UI-elements/footer.twig' %}
 <script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
 <script src="{{ siteUrl('assets/berichten-toggle.js') }}"></script>

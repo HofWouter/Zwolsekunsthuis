@@ -7,7 +7,6 @@
     </head>
     <body>
         {% include 'UI-elements/nav-bar.twig' %}
-
         <div class="m-4 mt-24 box-border grid w-auto grid-cols-1 gap-4 md:min-h-[calc(90vh-64px)] md:grid-cols-8">
             <div class="order-2 flex flex-col md:order-1 md:col-span-4 xl:col-span-3">
                 <div class="flex flex-1 flex-col justify-start gap-6 border-4 border-black p-4">
@@ -29,11 +28,11 @@
                     </div>
                     <p class="font-raleway text-base font-normal">De installatie Circuits van de Amsterdamse ontwerp-collectief Experimental Jetset is speciaal ontworpen voor de omloop bovenaan de historische trap van het museum. Circuits laat zien hoe informatie ooit letterlijk een fysieke vorm had: geluid, beeld en andere data werden opgeslagen op tastbare dragers.</p>
                 </div>
-                <button class="cursor-pointer border-0 bg-black p-4 font-raleway text-sm font-semibold uppercase text-white">Vraag aan</button>
+                <button id="open-product-modal" class="cursor-pointer border-0 bg-black p-4 font-raleway text-sm font-semibold uppercase text-white" type="button">Vraag aan</button>
             </div>
             <div class="order-1 relative w-full md:order-2 md:col-span-4 xl:col-span-5" data-product-carousel>
-                <div class="relative flex aspect-square cursor-pointer justify-center overflow-hidden border-4 border-black p-4 md:aspect-auto md:self-stretch md:h-full md:px-20">
-                    <div class="flex basis-full gap-5 transition-transform duration-300" data-carousel-items>
+                <div class="relative flex aspect-square cursor-pointer justify-center overflow-hidden border-4 border-black p-4 md:aspect-auto md:self-stretch md:h-full md:px-19">
+                    <div class="flex basis-full gap-4 transition-transform duration-300" data-carousel-items>
                         <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
                         <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
                         <img class="box-border h-auto w-full flex-none object-contain" src="{{ siteUrl('assets/placeholder_image.jpg') }}" alt="" data-carousel-item>
@@ -50,10 +49,14 @@
                 </div>
             </div>
         </div>
-
-        {% include 'UI-elements/nieuws-block.twig' %}
+        {% include 'UI-elements/nieuws-block.twig' with {
+            titel: "Ontdek meer"
+        } %}
         {% include 'UI-elements/footer.twig' %}
+        {% include 'UI-elements/product-request-modal.twig' %}
+
         <script src="{{ siteUrl('assets/product-carousel.js') }}"></script>
+        <script src="{{ siteUrl('assets/product-modal.js') }}"></script>
         <script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
     </body>
 </html>

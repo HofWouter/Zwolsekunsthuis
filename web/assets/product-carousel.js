@@ -7,9 +7,11 @@ document.querySelectorAll("[data-product-carousel]").forEach((carousel) => {
 	let activeIndex = 0;
 	if (!track || items.length === 0 || !previousButton || !nextButton) return;
 	const updateCarousel = () => {
-		const offsetPercentage = activeIndex * 100;
-		const offsetPixels = activeIndex * 20;
-		track.style.transform = `translateX(calc(-${offsetPercentage}% - ${offsetPixels}px))`;
+		const firstItem = items[0];
+		const gap = Number.parseFloat(getComputedStyle(track).gap || "0");
+		const slideWidth = firstItem ? firstItem.getBoundingClientRect().width : track.clientWidth;
+		const offset = activeIndex * (slideWidth + gap);
+		track.style.transform = `translateX(-${offset}px)`;
 		previousButton.disabled = activeIndex === 0;
 		nextButton.disabled = activeIndex === items.length - 1;
 	};
@@ -25,5 +27,6 @@ document.querySelectorAll("[data-product-carousel]").forEach((carousel) => {
 			updateCarousel();
 		}
 	});
+	window.addEventListener("resize", updateCarousel);
 	updateCarousel();
 });

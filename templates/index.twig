@@ -33,7 +33,9 @@
             </div>
         </div>
     </div>
-    {% include 'UI-elements/nieuws-block.twig' %}
+    {% include 'UI-elements/nieuws-block.twig' with {
+         titel: 'Nieuws'
+        } %}
     {% include 'UI-elements/footer.twig' %}
     <script src="{{ siteUrl('assets/nav-bar.js') }}"></script>
 </body>
